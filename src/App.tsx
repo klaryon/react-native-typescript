@@ -1,4 +1,5 @@
 import { BasicTypes } from "./typescript/BasicTypes";
+import { Functions } from "./typescript/Functions";
 import { ObjectLiterals } from "./typescript/ObjectLiterals";
 
 const App = () => {
@@ -8,6 +9,7 @@ const App = () => {
       <hr />
       <BasicTypes />
       <ObjectLiterals />
+      <Functions />
     </div>
   );
 };
