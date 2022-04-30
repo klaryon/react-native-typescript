@@ -4,6 +4,7 @@ import { ObjectLiterals } from "./typescript/ObjectLiterals";
 import { Contador } from "./components/Contador";
 import { ContadorHook } from "./components/ContadorHook";
 import { Login } from "./components/Login";
+import { Users } from "./components/Users";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Contador />
       <ContadorHook />
       <Login />
+      <Users />
     </div>
   );
 };
