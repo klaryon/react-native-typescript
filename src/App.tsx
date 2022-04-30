@@ -2,6 +2,7 @@ import { BasicTypes } from "./typescript/BasicTypes";
 import { Functions } from "./typescript/Functions";
 import { ObjectLiterals } from "./typescript/ObjectLiterals";
 import { Contador } from "./components/Contador";
+import { ContadorHook } from "./components/ContadorHook";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <ObjectLiterals />
       <Functions />
       <Contador />
+      <ContadorHook />
     </div>
   );
 };
