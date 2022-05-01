@@ -5,6 +5,7 @@ import { Contador } from "./components/Contador";
 import { ContadorHook } from "./components/ContadorHook";
 import { Login } from "./components/Login";
 import { Users } from "./components/Users";
+import { Forms } from "./components/Forms";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <ContadorHook />
       <Login />
       <Users />
+      <Forms />
     </div>
   );
 };
