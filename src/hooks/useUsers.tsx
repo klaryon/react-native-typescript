@@ -17,11 +17,23 @@ export const useUsers = () => {
 
     if (resp.data.data.length > 0) {
       setUsers(resp.data.data);
-      pageRef.current++;
     } else {
+      pageRef.current--;
       alert("No more records");
     }
   };
 
-  return { users, loadUsers };
+  const nextPage = () => {
+    pageRef.current++;
+    loadUsers();
+  };
+
+  const backPage = () => {
+    if (pageRef.current > 1) {
+      pageRef.current--;
+      loadUsers();
+    }
+  };
+
+  return { users, nextPage, backPage };
 };
